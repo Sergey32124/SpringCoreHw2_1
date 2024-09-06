@@ -5,7 +5,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class Main {
     public static void main(String[] args) {
         var context=new AnnotationConfigApplicationContext(Config.class);
-        Student student=context.getBean("student",Student.class);
+      /*  Student student=context.getBean("student",Student.class);
         System.out.println(student);
         Student student1=context.getBean("student1",Student.class);
         System.out.println(student1);
@@ -15,5 +15,8 @@ public class Main {
         System.out.println(student3);
         Student student4=context.getBean("student4",Student.class);
         System.out.println(student4);
+        School school = new School();*/ //создаем обхект нашей школы
+        System.out.println("School Name: " + context.getBean("school",School.class)); //логично
+
     }
 }

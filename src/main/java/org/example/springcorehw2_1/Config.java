@@ -13,19 +13,61 @@ import java.util.ArrayList;
 public class Config {
 
     @Bean
-   Student student(){return new  Student(111,"СТ","Иванов","Иван","Иванович");}
-
+   public Student student(){
+     Student student=new Student();
+     student.setId(1);
+     student.setSurname("Иванов");
+     student.setName("Сергей");
+     student.setLastname("Викторович");
+     student.setGroup("IT-1");
+     return student;
+    }
     @Bean
-    Student student1(){return new  Student(112,"ТТ","Петров","Иван","Иванович");}
-
+    public Student student1(){
+        Student student=new Student();
+        student.setId(2);
+        student.setSurname("Иванов");
+        student.setName("Сергей");
+        student.setLastname("Викторович");
+        student.setGroup("IT-2");
+        return student;
+    }
     @Bean
-    Student student2(){return new  Student(113,"ДД","Иванов","Петр","Иванович");}
-
+    public Student student2(){
+        Student student=new Student();
+        student.setId(3);
+        student.setSurname("Иванов");
+        student.setName("Сергей");
+        student.setLastname("Викторович");
+        student.setGroup("IT-3");
+        return student;
+    }
     @Bean
-    Student student3(){return new  Student(114,"ЛЛ","Добров","Иван","Петрович");}
-
+    public Student student3(){
+        Student student=new Student();
+        student.setId(4);
+        student.setSurname("Иванов");
+        student.setName("Сергей");
+        student.setLastname("Викторович");
+        student.setGroup("IT-4");
+        return student;
+    }
     @Bean
-    Student student4(){return new  Student(115,"ХХ","Итан","Иван","Итанович");}
+    public Student student4(){
+        Student student=new Student();
+        student.setId(5);
+        student.setSurname("Иванов");
+        student.setName("Сергей");
+        student.setLastname("Викторович");
+        student.setGroup("IT-5");
+        return student;
+    }
     @Bean
-    School school(){return new School("AA","DSW",  );    }
+    public School school(Student student){
+     School school=new School();
+     school.setName("KKKKK");
+     school.setAdress("NT-65");
+     school(student);
+     return school;
+    }
 }

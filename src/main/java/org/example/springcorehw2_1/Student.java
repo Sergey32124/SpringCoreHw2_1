@@ -6,8 +6,6 @@ import lombok.NoArgsConstructor;
 import org.springframework.context.annotation.Scope;
 
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 public class Student {
 //    Создать класс Student
 //    Свойства id группа и фио
